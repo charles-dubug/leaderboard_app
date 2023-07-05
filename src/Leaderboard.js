@@ -43,13 +43,14 @@ const Leaderboard = () => {
   };
 
   return (
-    <div>
-      <h1>Leaderboard</h1>
-      <label>
-        Limit:
-        <input type="number" min="1" value={limit} onChange={handleLimitChange} />
+    <div style={{ backgroundColor:'#03a9f46b', marginTop:"-30px"}}>
+      <h1 style={{textAlign:"center",paddingTop: "30px"}}>Leaderboard</h1>
+      <label style={{paddingLeft:"50px"}}>
+        <p style={{marginLeft:"50px",fontSize:"30px",fontWeight:"bold"}}>Number of Attendees to Display:
+        <input type="number" min="1" value={limit} onChange={handleLimitChange} style={{marginLeft:"30px",textAlign:"center",width:"80px",height:"20px"}} />
+        </p>
       </label>
-      <table>
+      <table style={{paddingLeft:"50px",paddingTop:"20px",borderSpacing:"12em 1em"}}>
         <thead>
           <tr>
             <th>ID</th>
@@ -60,9 +61,9 @@ const Leaderboard = () => {
         <tbody>
           {profiles.map(({ id, points, discord }) => (
             <tr key={id}>
-              <td>{id}</td>
-              <td>{points}</td>
-              <td>{discord}</td>
+              <td style={{textAlign:"center"}}>{id}</td>
+              <td style={{textAlign:"center"}}>{points}</td>
+              <td style={{textAlign:"center"}}>{discord}</td>
             </tr>
           ))}
         </tbody>
