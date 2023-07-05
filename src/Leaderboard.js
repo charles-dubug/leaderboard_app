@@ -45,6 +45,7 @@ const Leaderboard = () => {
   return (
     <div style={{ backgroundColor:'#03a9f46b', marginTop:"-30px"}}>
       <h1 style={{textAlign:"center",paddingTop: "30px"}}>Leaderboard</h1>
+      <img class="image_1" src="https://img.freepik.com/free-vector/golden-game-avatar-frames-award-badges-ui-icons_107791-14272.jpg?size=626&ext=jpg" style={{width:"50%",marginLeft:"25%"}}></img>
       <label style={{paddingLeft:"50px"}}>
         <p style={{marginLeft:"50px",fontSize:"30px",fontWeight:"bold"}}>Number of Attendees to Display:
         <input type="number" min="1" value={limit} onChange={handleLimitChange} style={{marginLeft:"30px",textAlign:"center",width:"80px",height:"20px"}} />
